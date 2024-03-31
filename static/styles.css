@@ -1,6 +1,7 @@
 html{
     background-color: rgba(255, 255, 255, 0.848);
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -12,9 +13,7 @@ html{
 }
 
 .navbar>* {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
     font-size: 15px;
 }
 
@@ -23,6 +22,10 @@ html{
     font-size: 27px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 .navbar>img {
     grid-column: 1;
 }
@@ -99,5 +102,34 @@ html{
     font-family: "Titillium Web", sans-serif;
     font-weight: 700;
     font-style: italic;
+  }
+  
+  .head-pic {
+    width: 20vw;
+    display: flex;
+    margin: auto;
+    border-radius: 50%;
+  }
+
+  #main {
+    display: flex;
+    margin: 0 20vw 0 20vw;
+  }
+
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .hor-align
+  {
+    flex-direction: row;
+  }
+
+  .vert-align
+  {
+    flex-direction: column;
   }
   
