@@ -1,15 +1,22 @@
 html{
-    background-color: rgba(255, 255, 255, 0.848);
-    padding: 0;
+    background-color: #202020;
     scroll-behavior: smooth;
+}
+body {
+    margin-left: 0;
+    margin: 0;
+    color: #f0f7f4;
 }
 
 .navbar {
     display: grid;
     grid-template:  20% / 20vw 46vw 7vw 7vw ;
     -ms-grid-column-align: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
+  
+    padding: 2%;
+  
+  
+    background-color: #70abaf;
 }
 
 .navbar>* {
@@ -24,7 +31,13 @@ html{
 
 a {
     text-decoration: none;
-    color: black;
+    color: #f0f7f4
+    
+}
+
+a:not(#nav-title):hover{
+    background-color: #99e1d9;
+    border-radius: 10%;
 }
 .navbar>img {
     grid-column: 1;
@@ -104,6 +117,10 @@ a {
     font-style: italic;
   }
   
+  .header {
+    width: 70vw;
+  }
+
   .head-pic {
     width: 20vw;
     display: flex;
@@ -113,7 +130,7 @@ a {
 
   #main {
     display: flex;
-    margin: 0 20vw 0 20vw;
+    margin: 0 5vw 0 5vw;
   }
 
   .centered {
@@ -133,3 +150,26 @@ a {
     flex-direction: column;
   }
   
+  button {
+    background-color: #70abaf;
+    border: none;
+    padding: .5vw;
+    width: 10vw;
+    border-radius: 5%;
+  }
+
+  button:hover {
+    background-color: #99e1d9;
+    cursor: pointer;
+  }
+
+  .c2a {
+    margin-bottom: 5px;
+  }
+
+
+
+  .resume {
+    width: 80vw;
+    filter: invert(0.88)
+  }
