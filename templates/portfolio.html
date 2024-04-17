@@ -1,22 +1,22 @@
 {% extends "layout.html" %}
 {% block content %}
-
-    <div class="project-box titillium-web-light">
-        <h2>Weather App</h2>
-        <!-- <img src="../static/portfolio/weatherapp.png" alt=""> -->
-        <div class="button-row">
-            <button>Open</button>
-            
-            <button>View code</button>
-            <img src="../static/portfolio/cloudy.png" alt="">
+    <div class="centered">
+        <h3 class="titillium-web-light">FEBRUARY 2023</h3>
+        <div class="project-box titillium-web-light">
+            <h2>Weather App</h2>
+            <!-- <img src="../static/portfolio/weatherapp.png" alt=""> -->
+            <div class="button-row">
+                <button onclick="window.location.href='https://masonmike2001.github.io/weather-app/'">Open</button>
+                <button onclick="window.location.href='https://github.com/masonmike2001/weather-app'">View code</button>
+                <img src="../static/portfolio/cloudy.png" alt="">
+            </div>
+            <h3>Features:</h4>
+            <ul>
+                <li>Built using Javascript</li>
+                <li>Calls the OpenWeatherMap API efficiently to deliver precise weather data metrics</li>
+                <li>Dynamic live wallpaper depending on the location's current forecast</li>
+            </ul>
         </div>
-        <h4>Features</h4>
-        <ul>
-            <li>Built using Javascript</li>
-            <li>Calls the OpenWeatherMap API efficiently to deliver precise weather data metrics</li>
-            <li>Dynamic live wallpaper depending on the location's current forecast</li>
-        </ul>
-
     </div>
 
 {% endblock %}
