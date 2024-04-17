@@ -2,10 +2,13 @@ html{
     background-color: #202020;
     scroll-behavior: smooth;
 }
+
 body {
     margin-left: 0;
     margin: 0;
-    color: #f0f7f4;
+    color: #ffffff;
+    width: 100vw;
+
 }
 
 .navbar {
@@ -16,7 +19,7 @@ body {
     padding: 2%;
   
   
-    background-color: #70abaf;
+    background-color: #333333;
 }
 
 .navbar>* {
@@ -31,12 +34,14 @@ body {
 
 a {
     text-decoration: none;
-    color: #f0f7f4
+    color: #ffffff;
+    filter: drop-shadow( rgb(15, 15, 15) 0.5px 0.5px);
     
 }
 
+
 a:not(#nav-title):hover{
-    background-color: #99e1d9;
+    background-color: #74b6ae;
     border-radius: 10%;
 }
 .navbar>img {
@@ -118,19 +123,37 @@ a:not(#nav-title):hover{
   }
   
   .header {
-    width: 70vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .head-pic {
-    width: 20vw;
+    width: 17vw;
     display: flex;
     margin: auto;
     border-radius: 50%;
   }
 
+  h1 {
+    margin-bottom: -10px;
+  }
+
+  hr {
+    width: 50%;
+  }
   #main {
     display: flex;
     margin: 0 5vw 0 5vw;
+  }
+
+  #main-grid {
+    display: grid;
+    grid-template: 30% / 40vw 40vw;
+
+    margin-top: 10vh;
   }
 
   .centered {
@@ -156,6 +179,9 @@ a:not(#nav-title):hover{
     padding: .5vw;
     width: 10vw;
     border-radius: 5%;
+    color: white;
+    text-shadow: rgb(15, 15, 15) .75px .75px;
+    
   }
 
   button:hover {
@@ -167,9 +193,58 @@ a:not(#nav-title):hover{
     margin-bottom: 5px;
   }
 
-
-
   .resume {
     width: 80vw;
     filter: invert(0.88)
+  }
+
+
+  /* Portfolio */
+  .project-box {
+   margin: 10%;
+    width: 100%;
+    border: .2px solid white;
+    display: grid;
+    grid-template: 20% 50% / 40% 60%;
+    border-radius: 2%;
+  }
+
+  .project-box>h2 {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+  }
+
+  .button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto;
+    gap: 5%;
+  }
+
+  .button-row>img {
+
+    margin: auto;
+    width: 5vw;
+
+  }
+
+  .project-box>h4 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .project-box>ul {
+    grid-column: 2;
+    grid-row: 2;
+    
+  }
+
+  .project-box>ul>li {
+    font-size: 14px;
+    text-align: left;
   }
