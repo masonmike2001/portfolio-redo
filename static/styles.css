@@ -13,10 +13,10 @@ body {
 
 .navbar {
     display: grid;
-    grid-template:  20% / 20vw 46vw 7vw 7vw ;
+    grid-template:  20% / 20% 50% 10% 10% ;
     -ms-grid-column-align: center;
-  
-    padding: 2%;
+    gap: 1%;
+    padding: 3%;
   
   
     background-color: #333333;
@@ -24,12 +24,12 @@ body {
 
 .navbar>* {
 
-    font-size: 15px;
+    font-size: 100%;
 }
 
 #nav-title {
 
-    font-size: 27px;
+    font-size: 150%;
 }
 
 a {
@@ -41,7 +41,7 @@ a {
 
 
 a:not(#nav-title):hover{
-    background-color: #affaff82;
+    background-color: #66fcf2cf;
     border-radius: 7%;
 }
 .navbar>img {
@@ -131,14 +131,14 @@ a:not(#nav-title):hover{
   }
 
   .head-pic {
-    width: 17vw;
+    width: 50%;
     display: flex;
     margin: auto;
     border-radius: 50%;
   }
 
   h1 {
-    margin-bottom: -10px;
+    margin-bottom: -2%;
   }
 
   hr {
@@ -153,7 +153,7 @@ a:not(#nav-title):hover{
     display: grid;
     grid-template: 30% / 40vw 40vw;
 
-    margin-top: 10vh;
+    margin-top: 5%;
   }
 
   .centered {
@@ -175,27 +175,29 @@ a:not(#nav-title):hover{
   }
   
   button {
-    background-color: #649ea2;
+    background-color: #66fcf2cf;
     border: none;
-    padding: .5vw;
-    width: 10vw;
+    padding: 2%;
+    margin: auto;
+    width: 20%;
     border-radius: 5%;
     color: white;
-    text-shadow: rgb(15, 15, 15) .75px .75px;
+    min-width: 61.66px;
+    /* text-shadow: rgb(15, 15, 15) .75px .75px; */
     
   }
 
   button:hover {
-    background-color: #80d1d89f;
+    background-color: #66fcf2;
     cursor: pointer;
   }
 
   .c2a {
-    margin-bottom: 5px;
+    margin-bottom: 5%;
   }
 
   .resume {
-    width: 80vw;
+    width: 80%;
     filter: invert(0.88)
   }
 
@@ -204,10 +206,10 @@ a:not(#nav-title):hover{
   .project-box {
  
     width: 90%;
-    border: .2px solid white;
+    border: 1px solid white;
     display: grid;
     grid-template: 20% 50% / 30% 70%;
-    border-radius: 2%;
+    border-radius: 3%;
   }
 
   .project-box>h2 {
@@ -230,7 +232,8 @@ a:not(#nav-title):hover{
   .button-row>img {
 
     margin: auto;
-    width: 5vw;
+    width: 15%;
+    margin-top: 5%;
 
   }
 
@@ -247,7 +250,7 @@ a:not(#nav-title):hover{
   }
 
   .project-box>ul>li {
-    font-size: 14px;
+    font-size: 100%;
     text-align: left;
   }
 
