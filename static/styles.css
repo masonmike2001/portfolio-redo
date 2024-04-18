@@ -206,10 +206,11 @@ a:not(#nav-title):hover{
   .project-box {
  
     width: 90%;
-    border: 1px solid white;
+    border-left: 1px solid #22fff0;
+    border-radius: 1%;
     display: grid;
     grid-template: 20% 50% / 30% 70%;
-    border-radius: 3%;
+    
   }
 
   .project-box>h2 {
@@ -254,3 +255,26 @@ a:not(#nav-title):hover{
     text-align: left;
   }
 
+
+  .bio>* {
+    width: 75%;
+    padding-top: 3%;
+    margin: auto;
+    font-size: 100%;
+  }
+
+  .bio-list {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+    padding: 6%;
+    background-color: #45aba4af;
+  }
+
+  .bio-list>* {
+    font-size: 100%;
+  }
+  
