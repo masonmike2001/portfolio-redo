@@ -120,6 +120,9 @@ body {
     margin-left: -4%;
     text-align: left;
   }
+  .showcase {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 481px) {
   /* comes into effect for screens larger than or equal to 481 pixels */
@@ -141,6 +144,10 @@ body {
     font-size: 100%;
     text-align: center;
     margin-bottom: 2%;
+  }
+
+  .headline {
+    margin-bottom: 16%;
   }
   .header>h1 {
     font-size: 340%;
@@ -169,13 +176,17 @@ body {
     flex-direction: row;
   }
   .bio-list>* {
-    font-size: 100%;
+    font-size: 80%;
     margin-left: 4%;
     text-align: left;
   }
   .year {
     font-size: 140%;
     margin-bottom: 4%;
+  }
+  .showcase {
+    width: 17%;
+    border-radius: 1%;
   }
 }
 .navbar {
@@ -190,6 +201,7 @@ body {
 a {
     text-decoration: none;
     color: #ffffff;
+    max-width: 200px;
     filter: drop-shadow( rgb(15, 15, 15) 0.5px 0.5px);
 }
 
@@ -225,6 +237,11 @@ a:not(#nav-title):hover{
 
 h1 {
   margin-bottom: -2%;
+
+}
+
+.blue {
+  color: #22fff0;
 }
 
 hr {
@@ -255,6 +272,7 @@ button {
   padding: 2%;
   color: white;
   min-width: 61.66px;
+
 }
 
 button:hover {
@@ -317,11 +335,19 @@ button:hover {
   margin-top: 2%;
   padding: 6%;
   background-color: #45aba4af;
+  padding-right: 15%;
+
 }
 
+.showcase {
+  /* border: #45aba4af solid 2px ; */
+  padding: 0;
+  margin-top: 2%;
+}
 
-
-
+span {
+  display: inline-block;
+}
 
 
 
