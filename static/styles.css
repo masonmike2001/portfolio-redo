@@ -210,11 +210,13 @@ a {
     text-decoration: none;
     color: #ffffff;
     max-width: 200px;
-    filter: drop-shadow( rgb(15, 15, 15) 0.5px 0.5px);
+    border-radius: 3%;
+    transition: 0.3s;
 }
 
 a:not(#nav-title):hover{
-    background-color: #45aba4af;
+    background-color: #0098f6af;
+    transition: 0.3s;
 }
 
 .navbar>img {
@@ -286,18 +288,19 @@ hr {
 }
 
 button {
-  background-color: #62f1e8af;
+  background-color: rgba(53, 236, 227, 0.69);
   border: none;
   padding: 2%;
   color: white;
   min-width: 61.66px;
+  transition: 0.3s;
 
 }
 
 button:hover {
   background-color: #0098f6af;
   border-radius: 6%;
-
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -355,9 +358,13 @@ button:hover {
   margin: auto;
   margin-top: 2%;
   padding: 6%;
-  background-color: #45aba4af;
+  background-color: rgba(53, 236, 227, 0.69);;
   padding-right: 15%;
 
+}
+
+.clipart {
+  width: 10%;
 }
 
 .showcase {
