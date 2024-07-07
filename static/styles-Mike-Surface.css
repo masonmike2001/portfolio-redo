@@ -120,9 +120,6 @@ body {
     margin-left: -4%;
     text-align: left;
   }
-  .showcase {
-    width: 40%;
-  }
 }
 @media screen and (min-width: 481px) {
   /* comes into effect for screens larger than or equal to 481 pixels */
@@ -144,10 +141,6 @@ body {
     font-size: 100%;
     text-align: center;
     margin-bottom: 2%;
-  }
-
-  .headline {
-    margin-bottom: 5%;
   }
   .header>h1 {
     font-size: 340%;
@@ -176,7 +169,7 @@ body {
     flex-direction: row;
   }
   .bio-list>* {
-    font-size: 80%;
+    font-size: 100%;
     margin-left: 4%;
     text-align: left;
   }
@@ -184,32 +177,19 @@ body {
     font-size: 140%;
     margin-bottom: 4%;
   }
-  .showcase {
-    width: 17%;
-    border-radius: 1%;
-  }
 }
 .navbar {
     display: grid;
-    grid-template:  20% / 20% 50% 10% 10% ;
+    grid-template:  20% / 20% 40% 15% 15% ;
     -ms-grid-column-align: center;
     padding: 3%;
     padding-left: 7%;
     background-color: #333333;
 }
 
-.button-grid {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10%;
-}
-
 a {
     text-decoration: none;
     color: #ffffff;
-    max-width: 200px;
     filter: drop-shadow( rgb(15, 15, 15) 0.5px 0.5px);
 }
 
@@ -245,11 +225,6 @@ a:not(#nav-title):hover{
 
 h1 {
   margin-bottom: -2%;
-
-}
-
-.blue {
-  color: #22fff0;
 }
 
 hr {
@@ -274,30 +249,16 @@ hr {
   flex-direction: column;
 }
 
-.vert-button>button {
-  padding: 0 20% 0 20% ;
-  height: 40px;
-  margin-top: 10px;
-
-
-}
-.vert-button>button:hover {
-  padding: 0 22% 0 22%
-}
-
 button {
-  background-color: #62f1e8af;
+  background-color: #45aba4af;
   border: none;
   padding: 2%;
   color: white;
   min-width: 61.66px;
-
 }
 
 button:hover {
-  background-color: #0098f6af;
-  border-radius: 6%;
-
+  background-color: #45aba4af;
   cursor: pointer;
 }
 
@@ -356,23 +317,14 @@ button:hover {
   margin-top: 2%;
   padding: 6%;
   background-color: #45aba4af;
-  padding-right: 15%;
-
 }
 
-.showcase {
-  /* border: #45aba4af solid 2px ; */
-  padding: 0;
-  margin-top: 2%;
-}
 
-span {
-  display: inline-block;
-}
 
-.left-align {
-  text-align: left;
-}
+
+
+
+
 
 
 
