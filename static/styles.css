@@ -66,7 +66,7 @@ body {
 @media screen and (min-width: 321px) and (max-width: 480px) {
   /* comes into effect for screens between 321 and 480 pixels (inclusive) */
   .navbar {
-    font-size: 80%;
+    font-size: 65%;
     margin-bottom: 10%;
   }
   #nav-title {
