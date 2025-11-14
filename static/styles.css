@@ -82,6 +82,12 @@ body {
     text-align: center;
     list-style-type: none;
   }
+    .project-box {
+    margin-left: 5%;
+    padding-left: 50px;
+        width: 100%;
+    /*padding: 20px;*/
+  }
 }
 @media screen and (min-width: 321px) or (max-width: 549px) {
   /* comes into effect for screens between 321 and 549 pixels (inclusive) */
@@ -130,6 +136,7 @@ body {
   .project-box {
     margin-left: 5%;
     padding-left: 5%;
+    padding: 20px;
   }
   .project-box>h2 {
     font-size: 90%;
@@ -159,7 +166,7 @@ body {
     padding: 15px;
   }
   .showcase {
-    width: 40%;
+    width: 80%;
   }
 
 @media screen and (min-width: 550px) {
