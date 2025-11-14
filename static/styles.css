@@ -4,7 +4,6 @@ html{
 }
 
 body {
-    margin-left: 0;
     margin: 0;
     color: #ffffff;
     width: 100vw;
@@ -14,13 +13,20 @@ body {
   /* comes into effect for screens less than or equal to 320 pixels */
   #nav-title {
     font-size: 100%;
+      margin-top: 20%;
   }
   .clipart {
     width: 27%;
   }
   #nav-work, #nav-bio {
-    font-size: 90%;    
+    font-size: 50%;
+      margin-right: 10px;
   }
+.navbar {
+    display: grid;
+    grid-template:  30% / 25% 25% 25% 25%;
+    padding-top: 1%;
+}
   .head-pic {
     width: 50%;
     margin-top: 10%;
@@ -35,18 +41,18 @@ body {
     margin-bottom: -3%;
   }
   h3 {
-    font-size: 70%;
+    font-size: 60%;
     text-align: center;
     margin: auto;
     margin-bottom: 2%;
     width: 60%;
   }
   .header {
-    font-size: 400%;
+    font-size: 100%;
     margin: 10px 0 10px 0;
   }
   h4 {
-    font-size: 70%;
+    font-size: 60%;
     text-align: center;
     margin: auto;
     margin-bottom: 2%;
@@ -62,7 +68,7 @@ body {
   }
   .bio>* {
     width: 75%;
-    padding-top: 3%;
+    padding-top: 1%;
     margin: auto;
     font-size: 90%;
   }
@@ -77,25 +83,33 @@ body {
     list-style-type: none;
   }
 }
-@media screen and (min-width: 321px) and (max-width: 480px) {
-  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+@media screen and (min-width: 321px) or (max-width: 549px) {
+  /* comes into effect for screens between 321 and 549 pixels (inclusive) */
   .navbar {
+    display: grid;
+    grid-template:  40% / 35% 45% 10% 10% ;
+    padding-top: 4%;
     font-size: 65%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+
   }
   #nav-title {
     font-size: 120%;
   }
   #nav-work, #nav-bio {
-    font-size: 90%;
+    font-size: 70%;
+      padding-left: 20%;
   }
   .head-pic {
-    width: 50%;
+    width: 140px;
+
 
   }
   #main-grid {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    margin-top: 8%;
+}
   }
   hr {
     /* display: none; */
@@ -127,7 +141,7 @@ body {
   }
   .bio>* {
     width: 75%;
-    padding-top: 3%;
+    padding-top: 1.5%;
     margin: auto;
     font-size: 90%; 
   }
@@ -147,19 +161,27 @@ body {
   .showcase {
     width: 40%;
   }
-}
-@media screen and (min-width: 481px) {
+
+@media screen and (min-width: 550px) {
   /* comes into effect for screens larger than or equal to 481 pixels */
   #main-grid {
     display: grid;
-    grid-template: 30% / 40vw 40vw;
-    margin-top: 5%;
+    grid-template: 70% / 400px 400px;
+    margin-top: 150px;
   }
+
+  .navbar {
+    font-size: 100%;
+    display: grid;
+    grid-template:  10% / 40% 40% 10% 10%;
+    padding-top: 1%;
+  }
+
   #nav-title {
-    font-size: 160%;
+    font-size: 121%;
   }
   #nav-work, #nav-bio {
-    font-size: 100%;
+    font-size: 90%;
   }
   .head-pic {
     width: 70%;
@@ -225,13 +247,13 @@ body {
   }
 }
 .navbar {
-    display: grid;
-    grid-template:  20% / 25% 45% 10% 10% ;
-    -ms-grid-column-align: center;
-    padding: 1%;
-    padding-left: 7%;
+    padding-bottom: 10px;
     background-color: #333333;
-
+    display: grid;
+    gap: 10px;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
 }
 
 .blink {
@@ -269,12 +291,17 @@ a {
     max-width: 200px;
     border-radius: 3%;
     transition: 0.3s;
+    text-align: center;
+    text-justify: auto;
 }
 
 a:not(#nav-title):hover{
     background-color: #0098f6af;
     transition: 0.3s;
+    padding: 20px;
+
 }
+
 
 .navbar>img {
     grid-column: 1;
@@ -282,10 +309,12 @@ a:not(#nav-title):hover{
 
 #nav-work {
     grid-column: 3;
+    font-size: 80%;
 }
 
 #nav-bio {
     grid-column: 4;
+    font-size: 80%;
 }
 
 .header {
@@ -300,8 +329,8 @@ a:not(#nav-title):hover{
   display: flex;
   margin: auto;
   border-radius: 50%;
-  border: 6px inset #22fff0;
-  max-width: 300px;
+  border: 4px inset #22fff0;
+  max-width: 150px;
 }
 
 .final {
@@ -361,6 +390,7 @@ button {
 button:hover {
   background-color: #0098f6af;
   border-radius: 6%;
+    padding: 20px;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -376,7 +406,7 @@ button:hover {
   border-left: 1px solid #22fff0;
   border-radius: 1%;
   display: grid;
-  grid-template: 20% 50% / 30% 70%;
+  grid-template: 20% 90% / 30% 70%;
 }
 
 .project-box>h2 {
@@ -385,9 +415,7 @@ button:hover {
   text-align: center;
 }
 
-.bio>* {
-  margin: 3% auto 3% auto;
-}
+
 
 .button-row {
   display: flex;
@@ -422,11 +450,19 @@ button:hover {
   justify-content: center;
   margin: auto;
   margin-top: 2%;
-  padding: 0 20% 10% 20%;
-  background-color: rgba(53, 236, 227, 0.69);
+  padding: 0 12% 0 12%;
+  background-color: rgba(40, 186, 178, 0.69);
 
 
 }
+
+
+#idcard {
+    background-color: #333333;
+  padding-bottom: 10%;
+  border-radius: 10%;
+}
+
 
 
 
@@ -441,7 +477,7 @@ span {
 }
 
 .left-align {
-  text-align: left;
+  text-align: center;
 }
 
 .year {
