@@ -254,6 +254,10 @@ body {
     margin-bottom: 15px;
     justify-content: center;
     align-items: center;
+      position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
 }
 
 .blink {
@@ -323,6 +327,16 @@ a:not(#nav-title):hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.footer {
+    background-color: #333333;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
 }
 
 .head-pic {
