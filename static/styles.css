@@ -175,6 +175,12 @@ body {
     display: grid;
     grid-template:  10% / 40% 40% 10% 10%;
     padding-top: 1%;
+      justify-content: center;
+    align-items: center;
+      position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
   }
 
   #nav-title {
@@ -247,10 +253,9 @@ body {
   }
 }
 .navbar {
-    padding-bottom: 10px;
     background-color: #333333;
     display: grid;
-    gap: 10px;
+    gap: 15px;
     margin-bottom: 15px;
     justify-content: center;
     align-items: center;
@@ -258,6 +263,10 @@ body {
     left: 0;
     top: 0;
     width: 100%;
+}
+
+.showcase {
+    margin-top: 10%;
 }
 
 .blink {
@@ -417,10 +426,12 @@ button:hover {
 /* Portfolio */
 .project-box {
   width: 90%;
-  border-left: 1px solid #22fff0;
-  border-radius: 1%;
+  /*border-left: 1px solid #22fff0;*/
+  border-radius: 2%;
   display: grid;
   grid-template: 20% 90% / 30% 70%;
+  background-color: #333333;
+    padding: 10px;
 }
 
 .project-box>h2 {
@@ -474,6 +485,7 @@ button:hover {
 #idcard {
     background-color: #333333;
   padding-bottom: 10%;
+margin-top: 10%;
   border-radius: 10%;
 }
 
